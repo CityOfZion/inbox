@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background-text {
+    display: inline;
+    padding: 0;
+    background-color: #000;
+    box-shadow: 0.20em 0 0 #000, -0.2em 0 0 #000;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 1;
+}

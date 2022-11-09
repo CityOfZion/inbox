@@ -1,0 +1,4 @@
+Add publickey to NNS record
+publickey TEXT 036d30e8f622eed31fb5066eaa2917c5c7adc220f0d8a6e74c1d7ecc2219f4978c
+
+
