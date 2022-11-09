@@ -4,7 +4,6 @@ import CryptoJS from 'crypto-js'
 export function CreateSharedSecret(privateKeyHex, publicKeyHex) {
     const a = crypto.createECDH('secp256r1');
     a.setPrivateKey(privateKeyHex, "hex")
-    let alicePrivateKeyHex = a.getPrivateKey().toString('hex')
     const secret = a.computeSecret(publicKeyHex, "hex")
     return secret.toString('hex')
 }
