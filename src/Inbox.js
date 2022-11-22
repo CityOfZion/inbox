@@ -20,6 +20,8 @@ import Welcome from "./views/Welcome/Welcome";
 
 import { useAccountContext } from "./contexts/AccountContext";
 import Register from "./views/Register";
+import Profile from "./views/Profile";
+import Post from "./views/Post/Post";
 
 function Inbox() {
 
@@ -28,6 +30,7 @@ function Inbox() {
         return (
             <Routes>
                 <Route path="/" element={<Welcome />}></Route>
+                <Route path="/@:domain" element={<Profile />}></Route>
             </Routes>
         )
     }
@@ -37,6 +40,8 @@ function Inbox() {
         <Routes>
             <Route path="/welcome" element={<Welcome />}></Route>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/post" element={<Post />}></Route>
+            <Route path="/@:domain" element={<Profile />}></Route>
             <Route path="/register" element={<Register />}></Route>
             <Route path="/inbox/:from" element={<InboxDetail />}></Route>
             <Route path="/inbox/:from/:tx" element={<Message />}></Route>

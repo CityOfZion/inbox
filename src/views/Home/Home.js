@@ -13,6 +13,7 @@ import * as dora from "../../services/dora"
 export default function Home(props) {
 
     const prefixHex = Neon.u.str2hexstring("inbox")
+    const inboxPublicPrefixHex = Neon.u.str2hexstring("inbox.public")
     const accountContext = useAccountContext()
     const account = accountContext.account
     const [inboxTxs, setInboxTxs] = React.useState([])
@@ -29,7 +30,7 @@ export default function Home(props) {
         //1. Filter only transactions that are prefixed with definded text(protocol) "inbox" 
         const filtered = result.items.filter((t) => {
             const invocation = t.invocations[0]
-            return invocation.metadata.data && invocation.metadata.data.startsWith(prefixHex)
+            return invocation.metadata.data && invocation.metadata.data.startsWith(prefixHex) && invocation.metadata.data.startsWith(inboxPublicPrefixHex) === false
         })
 
 
