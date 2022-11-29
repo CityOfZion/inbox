@@ -4,9 +4,17 @@ Send end-to-end encrypted message to another Neo address on Neo blockchain.
 This project is built for educational purposes. It requires you to put your WIF inside the app. It's not able to connect via other connection methods such as WalletConnect, or dAPI yet.
 Your WIF is stored locally using `localStorage` and never leave your computer or your phone. You can choose to log out at any time. It will remove your WIF from `localStorage`.
 
+## Demo
+Your inbox
+https://dinbox.app
+
+Twitter like public timeline with your NeoNS domain
+https://dinbox.app/@apisit.neo
+
+
 ## What it can do
 - You can send an encrypted message to any Neo N3 address that has NeoNS's `.neo` domain.
-
+- Post on your public timeline
 
 ## Under the hood
 Inbox uses ECDH — Your private key and recipient's public key are used to create a shared secret to encrypt a message with AES. Your public key is sent along with a transaction so a recipient can use it to create a shared secret to decrypt your message.
