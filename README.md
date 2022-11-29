@@ -5,10 +5,10 @@ This project is built for educational purposes. It requires you to put your WIF 
 Your WIF is stored locally using `localStorage` and never leave your computer or your phone. You can choose to log out at any time. It will remove your WIF from `localStorage`.
 
 ## Demo
-Your inbox
+Inbox.  
 https://dinbox.app
 
-Twitter like public timeline with your NeoNS domain
+Twitter like public timeline with your NeoNS domain.  
 https://dinbox.app/@apisit.neo
 
 
