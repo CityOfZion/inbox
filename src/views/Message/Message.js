@@ -131,14 +131,14 @@ export default function Message(props) {
                     <p className="text-xs">From</p>
 
                     <div>
-                        <p className="font-medium">{parsedData && parsedData["from.domain"] !== undefined ? parsedData["from.domain"] : null}</p>
+                        <p className="font-medium">{parsedData && parsedData["fromDomain"] !== undefined ? parsedData["fromDomain"] : null}</p>
                         <p className="text-xs">{transactionData && transactionData.from}</p>
                     </div>
                 </div>
                 <div className="p-4 flex flex-col ">
                     <p className="text-xs">To</p>
                     <div>
-                        <p className="font-medium">{parsedData && parsedData["to.domain"] !== undefined ? parsedData["to.domain"] : null}</p>
+                        <p className="font-medium">{parsedData && parsedData["toDomain"] !== undefined ? parsedData["toDomain"] : null}</p>
                         <p className="text-xs">{transactionData && transactionData.to}</p>
                     </div>
                 </div>

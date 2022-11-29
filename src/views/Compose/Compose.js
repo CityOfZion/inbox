@@ -111,8 +111,8 @@ export default function Compose(props) {
             "text": encrypted,
             "publicKey": senderPublicKey,
             "protocol": "iep-0",
-            "from.domain": selectedFromDomain,
-            "to.domain": to,
+            "fromDomain": selectedFromDomain,
+            "toDomain": to,
         }
         console.log(inboxProtocolStruct);
 

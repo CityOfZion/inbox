@@ -52,7 +52,7 @@ export default function MessageTransactionRow(props) {
 
                         {
                             account.address === invocation.metadata.from ?
-                                <>{parsedData["to.domain"] !== undefined ? parsedData["to.domain"] + " · " : null} {truncateMiddle(invocation.metadata.to)}</>
+                                <>{parsedData["toDomain"] !== undefined ? parsedData["toDomain"] + " · " : null} {truncateMiddle(invocation.metadata.to)}</>
                                 :
                                 <>{truncateMiddle(invocation.metadata.from)}</>
                         }
